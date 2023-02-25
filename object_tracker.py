@@ -41,7 +41,6 @@ flags.DEFINE_boolean('dont_show', False, 'dont show video output')
 flags.DEFINE_boolean('info', False, 'show detailed info of tracked objects')
 flags.DEFINE_boolean('count', False, 'count objects being tracked on screen')
 flags.DEFINE_list("video_mask", [None, './data/masking/mask.png'], "path to input video mask")
-#flags.DEFINE_string('ReID', 'veri', 'ReID list: vehicleid, veri, veriwild')
 
 class ReID:
     MODEL_PATH = "./model_data/veri.onnx"
@@ -262,7 +261,6 @@ def main(_argv):
                     temp_list = [[temp_frame, None]]
                     extend_list = [[items[2], key] for key, items in first_video_dic.items() if items[1] > frame_num -260 and items[1] < frame_num +30]
                     temp_list.extend(extend_list)
-                    print([s[1] for s in extend_list])
 
                     feat1 = None
                     min_distance = 0
@@ -285,8 +283,6 @@ def main(_argv):
                     veid = str(track_dic[track.track_id]) + "**"
                 else:
                     veid = track.track_id
-
-                print(track_dic)
 
 
             # draw bbox on screen

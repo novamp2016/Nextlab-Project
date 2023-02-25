@@ -1,8 +1,6 @@
 # 변경사항
 선행 영상과 후행 영상의 ReID를 위해 input과 output 영상의 매개변수를 리스트 형식으로 넣으셔야 합니다.
 video masking도 동일하게 리스트 형식으로 넣여야 적용됩니다. masking이 불필요하다면 None으로 지정하시면 됩니다.
-영상은 공유 불가능합니다.
-ReID 모델은 veri를 사용하였습니다.
 
 ### Conda (Recommended)
 
@@ -37,7 +35,7 @@ download file here: https://github.com/AlexeyAB/darknet/
 python save_model.py --model yolov4 
 
 # Run yolov4 deep sort object tracker on video
-python object_tracker.py --video ['./data/video/test.mp4', './data/video/test.mp4'] --output ['./outputs/test.mp4', './outputs/test.mp4']
+python object_tracker.py --video ['./data/video/number_cctv.mp4', './data/video/area_cctv.mp4'] --output ['./outputs/number_cctv.mp4', './outputs/area_cctv.mp4']
 
 ## Command Line Args Reference
 
