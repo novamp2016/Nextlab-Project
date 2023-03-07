@@ -3,7 +3,7 @@
 video masking도 동일하게 리스트 형식으로 넣여야 적용됩니다. masking이 불필요하다면 None으로 지정하시면 됩니다.
 
 
-#발표 슬라이드
+# 발표 슬라이드
 https://docs.google.com/presentation/d/1vHx04eHgGDH3_WjalozfwaPxphd7UC_n/edit?usp=sharing&ouid=105425414364534859439&rtpof=true&sd=true
 
 
