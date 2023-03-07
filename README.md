@@ -35,11 +35,13 @@ https://developer.nvidia.com/cuda-10.1-download-archive-update2
 download file here: https://github.com/AlexeyAB/darknet/
 
 # Convert darknet weights to tensorflow model
+```bash
 python save_model.py --model yolov4 
-
+```
 # Run yolov4 deep sort object tracker on video
+```bash
 python object_tracker.py --video ['./data/video/number_cctv.mp4', './data/video/area_cctv.mp4'] --output ['./outputs/number_cctv.mp4', './outputs/area_cctv.mp4']
-
+```
 ## Command Line Args Reference
 
 ```bash
